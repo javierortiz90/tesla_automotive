@@ -3,96 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla</title>
+    <title>Tesla | Nosotros</title>
+    <!--ESTILOS BOOTSTRAP-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--ESTILOS PROPIOS-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/favicon.ico">
     <script src="https://kit.fontawesome.com/197b21a5aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <a href="../Index.html"><img src="../assets/logo.png" alt="logo"></a>        <nav>               
-            <ul>
-                <li><a href="../pages/modelos.html">Modelos</a></li>
-                <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+<!--HEADER-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light p-4 py-md-4 flex-md-column shadow-lg">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logoTesla" width="120px"></a>
+          <!--NO TOCAR ESTE BOTON PORQUE ES EL MENU BURGER-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/modelos.html">Modelos</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="nosotrosImg">
-            <h1>Nosotros</h1>
-        </section>
+        </div>
+    </nav>
+</header>
+<!--FIN HEADER-->
 
-        <section>
-            <h3>Lorem ipsum dolor sit</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnat</p>
-        </section>
-        <section>
-            <div>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
-            </div>
-            <div>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
-            </div>
-            <div>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
-            </div>
-        </section>
-        <section>
-            <h3>Nuestro Equipo</h3>
-            <img src="../assets/user.jpg" alt="">
-            <img src="../assets/user.jpg" alt="">
-            <img src="../assets/user.jpg" alt="">
-            <img src="../assets/user.jpg" alt="">
-        </section>
+<!--MAIN-->
+<main>
+    <div class="bgNosotros text-center textoBlanco">
+        <h1 class="paddingH1">Nosotros</h1>
+    </div>
 
-        <section class="newsletter">
-            <h2>Suscribite a nuestro Newsletter</h2>
-            <input placeholder="Dejanos tu Correo Electronico" type="text">
-            <a class="clickAqui" href="#">Enviar</a>
-    </section>
-    </main>
-    <footer>
-        <nav>
-            <div class="logo">
-                <img src="../assets/logo.png" alt="logo">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="p-5 mx-md-5 px-md-5 text-center">
+                        <h2 class="my-md-3">Transformamos el Futuro de la Movilidad y la Energía</h2>
+                        <h5 class="fw-normal">Estamos a la vanguardia de la movilidad y la energía sostenible, transformando la manera en que nos movemos y utilizamos la energía. Únete a nosotros en nuestra misión de construir un futuro más limpio y brillante para todos</h5>
+                    </div>
+                </div>         
             </div>
-            <div class="contenido">
-                <h4>Contenido</h4>
-                <ul>
-                    <li><a href="../pages/modelos.html">Modelos</a></li>
-                    <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="contacto">
-                <h4>Contacto</h4>
-                <ul>
-                        <li>hola@hola.net</li>
-                        <li>+54 9 11 4444 4444</li>
-                        <br>
-                        <li>Avenida 9 de Julio 100</li>
-                        <li>Buenos Aires</li>
-                        <li>Argentina</li>
-                    </ul>
+            <div class="row gap-5 my-md-5 flex-md-row flex-column">
+                <div class="col">
+                    <h5 class="mb-md-3">Nuestra Misión</h5>
+                    <p> Nos comprometemos a acelerar la transición del mundo hacia la energía sostenible mediante el diseño, fabricación y venta de vehículos eléctricos de alto rendimiento, con el objetivo de reducir significativamente la dependencia de los combustibles fósiles y promover un futuro más limpio y sostenible.</p>
                 </div>
-            <div class="redesSociales">
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-x-twitter"></i></li>
-                    <li><i class="fa-brands fa-youtube"></i></li>
+                <div class="col">
+                    <h5 class="mb-md-3">Nuestra Visión</h5>
+                    <p>Aspiramos a liderar la revolución de la movilidad eléctrica y energética, ofreciendo soluciones innovadoras que impulsen un cambio fundamental en la forma en que se generan, utilizan y comparten la energía, transformando así la industria automotriz y energética a nivel mundial.</p>
+                </div>
+                <div class="col">
+                    <h5 class="mb-md-3">Nuestros Valores</h5>
+                    <p>
+                        Innovación constante, sostenibilidad ambiental, excelencia en cada detalle y compromiso total con el cliente y la sociedad. Estos son los valores fundamentales que guían a Tesla hacia un futuro más limpio, eficiente y centrado en las necesidades de las personas y el planeta.</p>
+                </div>
+            </div>
+            <div class="row gap-5 my-5 py-md-5 flex-md-row flex-column text-center">
+                <h3 class="fw-normal ">Nuestro Equipo</h3>
+                <div class="col mb-3">
+                    <img class="objectFitCover rounded-circle " src="../assets/user1.jpg" alt="">
+                    <h6 class="mt-3">María González</h6>
+                    <p>Directora de Marketing</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img class="objectFitCover rounded-circle " src="../assets/user2.jpg" alt="">
+                    <h6 class="mt-3">Javier Martínez</h6>
+                    <p>Gerente de Desarrollo</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img class="objectFitCover rounded-circle " src="../assets/user3.jpg" alt="">
+                    <h6 class="mt-3">Carlos Rodríguez</h6>
+                    <p>Gerente de Operaciones</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>                </div>
+                <div class="col">
+                    <img class="objectFitCover rounded-circle " src="../assets/user4.jpg" alt="">
+                    <h6 class="mt-3">Ana López</h6>
+                    <p>Gerenta de Sostenibilidad y Medio Ambienteo</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+    
+</main>
+<!--FIN MAIN-->
+ 
+<!--FOOTER-->
+<footer class="bgFooter">
+    <div class="container">
+        <div class="row pt-5 py-3">
+            <div class="col-12 col-md-6 text-center text-md-start">
+                <h3>Suscribite a nuestro Newsletter</h3>
+            </div>
+            <div class="col-12 col-sm-8 col-md-4">
+                <input type="email" class="form-control" id="email-newsletter" value="" placeholder="Correo Electronico" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required>
+            </div>
+            <div class=" col-12 pt-2 col-sm-4 pt-sm-0 col-md-2 pt-md-0 text-center">
+                <a href="#" class="btn boton botonNegro">Suscribite</a>
+            </div>
+        </div>
+        <hr>
+        <div class="row  py-3">
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <img class="mb-3" src="../assets/logo.png" alt="logoTesla" width="150px">
+                <p class="me-md-5">Estamos construyendo un mundo impulsado por energía solar, que funciona con baterías y se transporta mediante vehículos eléctricos.</p>
+            </div>
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <h5 class="mb-3">Contenido</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-decoration-none" href="../index.html">Inicio</a></li>
+                    <li><a class="text-decoration-none" href="../pages/modelos.html">Modelos</a></li>
+                    <li><a class="text-decoration-none" href="../pages/accesorios.html">Accesorios</a></li>
+                    <li><a class="text-decoration-none" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <h5 class="mb-3">Contacto</h5>
+                <p class="">Avenida de Julio 100,<br>Buenos Aires, Argentina</p>
+                <p class=""><i class="fa-solid fa-phone"></i> 54 9 11 4444 4444</p>
+                <p class=""><i class="fa-solid fa-envelope"></i> hola@tesla.com</p>
+            </div>
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <h5 class="mb-3">Redes Sociales</h5>
+                <ul class="d-flex list-unstyled justify-content-md-start gap-3">
+                    <li><a href="https://www.instagram.com/teslamotors/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://es-la.facebook.com/TeslaMotorsCorp/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/Tesla"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/@tesla"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
-        </nav>
-    </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

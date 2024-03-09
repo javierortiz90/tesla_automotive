@@ -4,93 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesla</title>
+    <!--ESTILOS BOOTSTRAP-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--ESTILOS PROPIOS-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/favicon.ico">
     <script src="https://kit.fontawesome.com/197b21a5aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <a href="../Index.html"><img src="../assets/logo.png" alt="logo"></a>        <nav>               
-            <ul>
-                <li><a href="../pages/modelos.html">Modelos</a></li>
-                <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+<!--HEADER-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light p-4 py-md-4 flex-md-column shadow-lg">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logoTesla" width="120px"></a>
+          <!--NO TOCAR ESTE BOTON PORQUE ES EL MENU BURGER-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/modelos.html">Modelos</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Contacto</h1>
-            <p>Dejanos tu mensaje para que podamos ponernos en contacto a la brevedad</p>
-        </section>
+        </div>
+    </nav>
+</header>
+<!--FIN HEADER-->
 
-        <section>  
-            <div>
-                <h3>Informacion</h3>
-                <ul>
-                    <li>hola@hola.net</li>
+<!--MAIN-->
+<main>
+    <div class="text-center pb-md-5">
+        <h1 class="paddingH1">Contacto</h1>
+    </div>
+    
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-5 text-center">
+                <h3 class="mb-3 mb-md-5 fw-normal">Información</h3>
+                <ul class="list-unstyled">
+                    <li>hola@tesla.com</li>
                     <li>+54 9 11 4444 4444</li>
                     <br>
-                    <li>Avenida 9 de Julio 100</li>
+                    <li>Avenida de julio 100</li>
                     <li>Buenos Aires</li>
                     <li>Argentina</li>
                 </ul>
             </div>
-            <div>
-                <h3>Dejanos un mensaje</h3>
-                <form action="">
-                    <input placeholder="Nombre" type="text">
-                    <input placeholder="Apellido" type="text">
-                    <input placeholder="Email" type="text">
-                    <input placeholder="Telefono" type="text">
-                    <textarea placeholder="Dejanos tu mensaje" name="" id="" cols="30" rows="10"></textarea>
-                    <a class="clickAqui" href="#">Enviar</a>
+            <div class="col-md-7 pb-5">
+                <h3 class="mb-3 mb-md-5 fw-normal">Dejanos un mensaje</h3>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="validationDefault01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationDefault01" value="" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationDefault02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationDefault02" value="" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="validationDefault03" value="" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault04" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="validationDefault04" value="" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationDefault05" class="form-label">Dejanos tu Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                          <button class="btn boton botonNegro" type="submit">Enviar</button>
+                    </div>
                 </form>
             </div>
-        </section>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9749139900696!2d-58.38361634308573!3d-34.60479585043988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1707437855787!5m2!1ses!2sar" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-    </main>
-    <footer>
-        <nav>
-            <div class="logo">
-                <img src="../assets/logo.png" alt="logo">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+        </div>
+    </div>
+    <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9749139900696!2d-58.38361634308573!3d-34.60479585043988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1707437855787!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</main>
+<!--FIN MAIN-->
+ 
+<!--FOOTER-->
+<footer class="bgFooter">
+    <div class="container">
+        <div class="row  py-4">
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <img class="mb-3" src="../assets/logo.png" alt="logoTesla" width="150px">
+                <p class="me-md-5">Estamos construyendo un mundo impulsado por energía solar, que funciona con baterías y se transporta mediante vehículos eléctricos.</p>
             </div>
-            <div class="contenido">
-                <h4>Contenido</h4>
-                <ul>
-                    <li><a href="../pages/modelos.html">Modelos</a></li>
-                    <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <h5 class="mb-3">Contenido</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-decoration-none" href="../index.html">Inicio</a></li>
+                    <li><a class="text-decoration-none" href="../pages/modelos.html">Modelos</a></li>
+                    <li><a class="text-decoration-none" href="../pages/accesorios.html">Accesorios</a></li>
+                    <li><a class="text-decoration-none" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="text-decoration-none" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="contacto">
-                <h4>Contacto</h4>
-                <ul>
-                        <li>hola@hola.net</li>
-                        <li>+54 9 11 4444 4444</li>
-                        <br>
-                        <li>Avenida 9 de Julio 100</li>
-                        <li>Buenos Aires</li>
-                        <li>Argentina</li>
-                    </ul>
-                </div>
-            <div class="redesSociales">
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-x-twitter"></i></li>
-                    <li><i class="fa-brands fa-youtube"></i></li>
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <h5 class="mb-3">Contacto</h5>
+                <p class="">Avenida de Julio 100,<br>Buenos Aires, Argentina</p>
+                <p class=""><i class="fa-solid fa-phone"></i> 54 9 11 4444 4444</p>
+                <p class=""><i class="fa-solid fa-envelope"></i> hola@tesla.com</p>
+            </div>
+            <div class="col-md-3 px-4 py-2 p-md-3">
+                <h5 class="mb-3">Redes Sociales</h5>
+                <ul class="d-flex list-unstyled justify-content-md-start gap-3">
+                    <li><a href="https://www.instagram.com/teslamotors/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://es-la.facebook.com/TeslaMotorsCorp/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/Tesla"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/@tesla"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+</footer>
 
-        </nav>
-    </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

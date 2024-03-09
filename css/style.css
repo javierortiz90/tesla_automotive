@@ -1,242 +1,209 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    padding:0;
+    padding: 0;
     margin:0;
+}
+
+a {
     text-decoration: none;
 }
 
+a:hover{
+    color: #727272;
+}
+
 body{
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-}
-
-li::marker {
-    content: "";
-  }
-
-a{
-    color: inherit;
-}
-
-.bold{
-    font-weight: 600;
-}
-
-h1{
-    font-size: 40pt;
-    padding-top: 80px;
-}
-
-h2{
-    font-weight:300;
-}
-
-h3{
-    font-size: 25pt;
+    font-family: Montserrat;
     font-weight: 500;
-    margin-bottom: 30px;
+    color: black;
 }
 
-h4{
-    margin: 20px 0 10px 0;
-}
- 
-header{
-    width: 100%;
-    padding: 40px 0 10px 0;
-    background-color: #ffffffde;
-    z-index: 999;
+.textoBlanco{
+    color: white;
 }
 
-header nav ul{
-    margin: 20px 0;
+p{
+    font-size: 10pt;
 }
 
-header nav ul li{
-    display: inline-block;
-    margin: 0 50px;
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+input{
+    font-size: 10pt;
+}
+
+.nav-link{
     font-size: 10pt;
     font-weight: 700;
 }
 
-header img{
-    width: 120px;
+
+footer p{
+    font-size: 9pt;
+    margin-bottom: 0;
 }
 
-.homePageImg{
-    height: 87vh;
-    background-size:cover;
-    background-image: url("../assets/homePageImg.jpg");
+footer .footer-link, a{
+    color: #272727;
+    font-size: 10pt;
 }
 
-.accesoriosImg{
-    height: 87vh;
-    background-size:cover;
-    background-image: url("../assets/accesoriosImg.jpg");
+.bgIndex{
+    background-image: url(../assets/homePageImg.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 90vh;
 }
 
-.nosotrosImg{
-    height: 87vh;
-    background-size:cover;
-    background-image: url("../assets/nosotrosImg.jpg");
+.bgModelos{
+    background-image: url(../assets/modelosImg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
 }
 
-.modelosImg{
-    height: 87vh;
-    background-size:cover;
-    background-image: url("../assets/modelosImg.jpg");
+.bgAccesorios{
+    background-image: url(../assets/accesoriosImg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
 }
 
-.strip{
-    padding: 20px 0;
-    text-align: left;
-    align-items: center;
+@media screen and (max-width:765px){
+    .bgAccesorios{
+background-position: 40%;
+    }
+}
+
+.bgNosotros{
+    background-image: url(../assets/nosotrosImg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.bgSection-1{
+    background-color: #727272;
+}
+
+.bgSection-2{
+    background-color: #363636;
+}
+
+.bgFooter{
+    background-color: rgb(245, 245, 245);
+}
+
+.paddingH1{
+    padding-top: 80px;
+}
+
+.padding-25{
+    padding: 0 50%;
+}
+
+.hNav{
+    height: 100%;
+}
+
+.boton{
+    border-radius: 10px;
+    padding: 5px 40px;
+    border: 2px solid;
+}
+
+.botonBlanco{
+    color: white;
+    border-color: white;
+}
+
+.botonBlanco:hover {
+    color: #272727;
+    background-color: white;
+    border-color: white;
+}
+
+.botonNegro{
+    color: #272727;
+    border-color:#272727;
+}
+
+.botonNegro:hover {
     color: white;
     background-color: #272727;
+    border-color: #272727;
 }
 
-section .textoDestacado{
-    font-weight: 700;
-    font-size: 20pt;
-    width: 70%;
-    padding-left: 10%;
-    display: inline-block;
-
-}
-
-section .clickAqui{
-    border: 2px solid ;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 10px 40px;
-}
-
-section .verMas{
-    border: 2px solid;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 5px 40px;
-    margin-top: 20px;
-}
-
-.cards{
-    width: 80%;
-    margin: 0 auto;
-}
-
-.cards .card{
-    max-width: 40%;
-    margin: 0 5%;
-    text-align: left;
-
-}
-.cards .card img{
-    width: 100%;
-    border-radius: 10px;
- }
-
- .novedades{
-    padding: 70px 0;
- }
-
- .destacado{
-    background-color: #727272;
-    text-align: center;
-    align-items: center;
-    padding: 70px 25%;
-    color: white;
-
- }
-
- .destacado h3{
-    font-size: 40pt;
-    font-weight: 700;
-    margin-bottom: 30px;
- }
-
- .destacado p{
-    font-size: 25pt;
-    font-weight: 300;
- }
-
- .destacado .clickAqui{
-    margin-top: 40px;
- }
-
-.newsletter{
-    display:  flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 40px 0;
-    color: #272727;
-}
-
-.newsletter h2{
-    width: 60%;
-    text-align: left;
-}
-
-.newsletter input{
-    width: 30%;
+.form-control {
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #272727;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-footer{
-    padding: 40px 0;
-    background-color: #eeeeee;
+.form-control:focus {
+    color: #272727;
+    background-color: transparent;
+    border-color: #727272;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+  }
+.imgRedonda{
+    width: 70%;
 }
 
-footer nav{
-    width: 80%;
-    margin: 0 auto;
+.objectFitCover{
+    object-fit: cover;
+
+ }
+
+ .vertical {
+    border-left: 1px solid #363636;
+    height: 100%;
+  }
+
+iframe{
+    width: 100%;
+    height: 400px;
 }
 
-footer nav > div{
-    padding: 20px 3%;
-    text-align: left;
-    width: 15%;
-    display: inline-block;
+section hr{
+    width: 30px;
+    margin: 0.5rem 0;
 }
 
-footer nav > div h3{
-    margin-bottom: 10px;
+.precio{
+    font-weight: 700;
+    font-size: 9pt;
+    line-height: 0;
 }
 
-nav p, li{
-    font-size: 12px;
-    margin-bottom: 2px;
+.mapa{
+    filter : grayscale(85%);
+	opacity: 0.85;
+	transition: all 0.4s ease-in-out;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
 }
 
-footer nav .logo img{
-    max-width: 60%;
+.mapa:hover{
+    filter : grayscale(0%);
+	opacity: 1;
+    transition: all 0.4s ease-in-out;
 }
 
-footer nav .logo p{
-    margin-top: 10px;
+/*Media query para las pantallas chicas*/
+@media screen and (max-width:765px){
+
+.vertical {
+        border: none;
+      }
+
+iframe{
+    height: 250px;
 }
 
-footer nav .redesSociales i{
-    margin: 5px;
-}
-
-.modelos{
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-.modelos div{
-    width: 24%;
-    display: inline-block;
-}
-
-.modelos img{
-    width: 60%;
-}
-
-.accesorios div{
-    display: inline-block;
 }
