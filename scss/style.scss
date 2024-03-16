@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #727272;
+}
+
+body{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: black;
+}
+
+.textoBlanco{
+    color: white;
+}
+
+p{
+    font-size: 10pt;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+input{
+    font-size: 10pt;
+}
+
+.nav-link{
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+
+footer p{
+    font-size: 9pt;
+    margin-bottom: 0;
+}
+
+footer .footer-link, a{
+    color: #272727;
+    font-size: 10pt;
+}
+
+.bgIndex{
+    background-image: url(../assets/homePageImg.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 90vh;
+}
+
+.bgModelos{
+    background-image: url(../assets/modelosImg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.bgAccesorios{
+    background-image: url(../assets/accesoriosImg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+@media screen and (max-width:765px){
+    .bgAccesorios{
+background-position: 40%;
+    }
+}
+
+.bgNosotros{
+    background-image: url(../assets/nosotrosImg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.bgSection-1{
+    background-color: #727272;
+}
+
+.bgSection-2{
+    background-color: #363636;
+}
+
+.bgFooter{
+    background-color: rgb(245, 245, 245);
+}
+
+.paddingH1{
+    padding-top: 80px;
+}
+
+.padding-25{
+    padding: 0 50%;
+}
+
+.hNav{
+    height: 100%;
+}
+
+.boton{
+    border-radius: 10px;
+    padding: 5px 40px;
+    border: 2px solid;
+}
+
+.botonBlanco{
+    color: white;
+    border-color: white;
+}
+
+.botonBlanco:hover {
+    color: #272727;
+    background-color: white;
+    border-color: white;
+}
+
+.botonNegro{
+    color: #272727;
+    border-color:#272727;
+}
+
+.botonNegro:hover {
+    color: white;
+    background-color: #272727;
+    border-color: #272727;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid #272727;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    color: #272727;
+    background-color: transparent;
+    border-color: #727272;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+  }
+.imgRedonda{
+    width: 70%;
+}
+
+.objectFitCover{
+    object-fit: cover;
+
+ }
+
+ .vertical {
+    border-left: 1px solid #363636;
+    height: 100%;
+  }
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
+section hr{
+    width: 30px;
+    margin: 0.5rem 0;
+}
+
+.precio{
+    font-weight: 700;
+    font-size: 9pt;
+    line-height: 0;
+}
+
+.mapa{
+    filter : grayscale(85%);
+	opacity: 0.85;
+	transition: all 0.4s ease-in-out;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.mapa:hover{
+    filter : grayscale(0%);
+	opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+/*Media query para las pantallas chicas*/
+@media screen and (max-width:765px){
+
+.vertical {
+        border: none;
+      }
+
+iframe{
+    height: 250px;
+}
+
+}
