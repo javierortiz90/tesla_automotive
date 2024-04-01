@@ -1,0 +1,14 @@
+footer p {
+  font-size: map-get($tamano-fuente, 9);
+  margin-bottom: 0;
+  }
+  
+footer .footer-link, a {
+    color: $color-primario;
+    font-size: map-get($tamano-fuente, 9);
+  }
+
+section hr {
+  width: 30px;
+  margin: 0.5rem 0;
+}

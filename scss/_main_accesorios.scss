@@ -1,0 +1,16 @@
+.vertical {
+    border-left: 1px solid $color-secundario;
+    height: 100%;
+}
+  
+@media screen and (max-width: 765px) {
+    .vertical {
+      border: none;
+    }
+}
+  
+.precio {
+    font-weight: map-get($grosor-fuente, bold);
+    font-size: map-get($tamano-fuente, 9);
+    line-height: 0;
+}

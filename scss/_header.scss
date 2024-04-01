@@ -1,0 +1,10 @@
+.header{
+  z-index:999;
+  background-color: $color-blanco;
+}
+
+.nav-link {
+  font-size: map-get($tamano-fuente, 10);
+  font-weight: map-get($grosor-fuente, bold);
+
+}

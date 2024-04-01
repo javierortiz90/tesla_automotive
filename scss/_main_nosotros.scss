@@ -1,0 +1,11 @@
+.imgEquipo img{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        filter: grayscale(50%);
+        opacity: 0.85;
+        transition: all 0.4s ease-in-out;
+        border-radius: 50%;
+    }
+}

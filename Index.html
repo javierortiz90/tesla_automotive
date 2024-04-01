@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla</title>
+    <meta name="description" content="Tesla está acelerando la transición del mundo hacia la energía sustentable con autos eléctricos, soluciones integradas de energía solar y renovables para el hogar y empresas.">
+    <meta name="keywords" content="autos, autos eléctricos, sustentabilidad, energia solar, energia renovable">
+    <title>Tesla | Autos Eléctricos</title>
     <!--ESTILOS BOOTSTRAP-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!--ESTILOS PROPIOS-->
     <link rel="stylesheet" href="./css/style.css">
+    <!--ANIMACION AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./assets/favicon.ico">
     <script src="https://kit.fontawesome.com/197b21a5aa.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <!--HEADER-->
-<header>
+<header class="header position-sticky top-0">
     <nav class="navbar navbar-expand-lg navbar-light p-4 py-md-4 flex-md-column shadow-lg">
-        <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logoTesla" width="120px"></a>
+        <a class="navbar-brand" href="#"><img src="./assets/logo.webp" alt="logoTesla" width="120px"></a>
           <!--NO TOCAR ESTE BOTON PORQUE ES EL MENU BURGER-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,11 +46,11 @@
 <!--FIN HEADER-->
 
 <!--MAIN-->
-    <main>
-            <div class="bgIndex text-center">
-                <h1 class="paddingH1">Conduccion Electrizante</h1>
-                <p>Innovación, Sostenibilidad y Rendimiento sin Igual</p>
-            </div>
+    <main> 
+        <div class="background background--bgIndex text-center" data-aos="fade-in">
+            <h1 class="paddingH1">Conduccion Electrizante</h1>
+            <p>Innovación, Sostenibilidad y Rendimiento sin Igual</p>
+        </div>
         <div class="bgSection-2">
             <div class="container">
                 <div class="row textoBlanco text-center align-items-center text-md-start py-5">
@@ -64,7 +69,7 @@
                 <h2 class="py-3 text-center">Ultimas Novedades</h2>
                 <div class="col-12 col-md-6">
                     <div class="card border-0">
-                        <img src="./assets/img1.jpg" class="card-img-top rounded-3" alt="actualizacion_autopilot">
+                        <img src="./assets/img1.webp" class="card-img-top rounded-3" alt="actualizacion_autopilot">
                         <div class="card-body">
                           <h5 class="card-title my-md-3">Actualización Autopilot - Model 3</h5>
                           <p class="card-text">Nuevas mejoras en el sistema Autopilot, llevando la conducción autónoma a un nivel superior. Con nuevas funciones de seguridad, mayor precisión en la navegación y una experiencia de conducción más fluida...</p>
@@ -74,7 +79,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="card border-0">
-                        <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="modely">
+                        <img src="./assets/img2.webp" class="card-img-top rounded-3" alt="modely">
                         <div class="card-body">
                           <h5 class="card-title my-md-3">Model Y</h5>
                           <p class="card-text">Con hasta 310 millas de alcance con una sola carga, es probable que necesites un descanso antes de que tu Model Y lo haga. La tracción total con motor dual garantiza que esté listo para afrontar cualquier condición de la carretera.</p>
@@ -118,7 +123,7 @@
             <hr>
             <div class="row  py-3">
                 <div class="col-md-3 px-4 py-2 p-md-3">
-                    <img class="mb-3" src="./assets/logo.png" alt="logoTesla" width="150px">
+                    <img class="mb-3" src="./assets/logo.webp" alt="logoTesla" width="150px">
                     <p class="me-md-5">Estamos construyendo un mundo impulsado por energía solar, que funciona con baterías y se transporta mediante vehículos eléctricos.</p>
                 </div>
                 <div class="col-md-3 px-4 py-2 p-md-3">
@@ -139,7 +144,7 @@
                 </div>
                 <div class="col-md-3 px-4 py-2 p-md-3">
                     <h5 class="mb-3">Redes Sociales</h5>
-                    <ul class="d-flex list-unstyled justify-content-md-start gap-3">
+                    <ul class="d-flex list-unstyled justify-content-md-start gap-3 redesSociales">
                         <li><a href="https://www.instagram.com/teslamotors/"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="https://es-la.facebook.com/TeslaMotorsCorp/"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/Tesla"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -151,5 +156,12 @@
     </footer>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out',
+        duration: 500
+    });
+</script>
 </body>
 </html>

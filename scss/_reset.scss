@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: $tipografia;
+    font-weight: map-get($grosor-fuente, regular);
+    color: $color-primario;
+  }

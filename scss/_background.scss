@@ -1,0 +1,47 @@
+.background {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+    
+    &--bgIndex {
+      @extend .background;
+      background-image: url(../assets/homePageImg.webp);
+    }
+    
+    &--bgAccesorios {
+      @extend .background;
+      background-image: url(../assets/accesoriosImg.webp);
+    }
+
+    &--bgModelos {
+      @extend .background;
+      background-image: url(../assets/modelosImg.webp);
+    }
+
+    &--bgNosotros {
+      @extend .background;
+      background-image: url(../assets/nosotrosImg.webp);
+    }
+}
+  
+@media screen and (max-width: 765px) {
+  .background {
+
+    &--bgAccesorios {
+    @extend .background;
+    background-position: 40%;
+    }
+  }
+}
+  
+.bgSection-1 {
+  background-color: $color-terciario;
+}
+  
+.bgSection-2 {
+  background-color: $color-secundario;
+}
+  
+.bgFooter {
+  background-color: $color-footer;
+}

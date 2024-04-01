@@ -1,29 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-
-  &:hover {
-    color: #727272;
-  }
+body {
+  font-family: montserrat;
+  font-weight: 500;
+  color: #292929;
 }
 
-body {
-  font-family: Montserrat;
-  font-weight: 500;
-  color: black;
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #727272;
 }
 
 .textoBlanco {
   color: white;
 }
 
-p {
+p, input {
   font-size: 10pt;
 }
 
@@ -31,13 +29,137 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-input {
-  font-size: 10pt;
+.paddingH1 {
+  padding-top: 80px;
+}
+
+.botonBlanco {
+  border-radius: 10px;
+  padding: 5px 40px;
+  border: 2px solid;
+  color: white;
+  border-color: white;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+.botonBlanco:hover {
+  color: #292929;
+  background-color: white;
+  border-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.botonBlanco:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.botonNegro {
+  border-radius: 10px;
+  padding: 5px 40px;
+  border: 2px solid;
+  color: #292929;
+  border-color: #292929;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+.botonNegro:hover {
+  color: white;
+  background-color: #292929;
+  border-color: #292929;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.botonNegro:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.objectFitCover {
+  object-fit: cover;
+}
+
+.redesSociales a {
+  font-size: 12pt;
+}
+
+.fa-instagram:hover {
+  color: orange !important;
+}
+
+.fa-facebook:hover {
+  color: blue !important;
+}
+
+.fa-twitter:hover {
+  color: #727272 !important;
+}
+
+.fa-youtube:hover {
+  color: red !important;
+}
+
+.card-img-top {
+  filter: grayscale(0%);
+  transition: all 0.3s ease-in-out;
+}
+.card-img-top:hover {
+  filter: grayscale(65%);
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 765px) {
+  .card-img-top {
+    filter: grayscale(0%);
+  }
+}
+.header {
+  z-index: 999;
+  background-color: white;
 }
 
 .nav-link {
   font-size: 10pt;
   font-weight: 700;
+}
+
+.background, .background--bgNosotros, .background--bgModelos, .background--bgAccesorios, .background--bgIndex {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.background--bgIndex {
+  background-image: url(../assets/homePageImg.webp);
+}
+.background--bgAccesorios {
+  background-image: url(../assets/accesoriosImg.webp);
+}
+.background--bgModelos {
+  background-image: url(../assets/modelosImg.webp);
+}
+.background--bgNosotros {
+  background-image: url(../assets/nosotrosImg.webp);
+}
+
+@media screen and (max-width: 765px) {
+  .background--bgAccesorios {
+    background-position: 40%;
+  }
+}
+.bgSection-1 {
+  background-color: #727272;
+}
+
+.bgSection-2 {
+  background-color: #444444;
+}
+
+.bgFooter {
+  background-color: #F5F5F5;
 }
 
 footer p {
@@ -46,121 +168,21 @@ footer p {
 }
 
 footer .footer-link, a {
-  color: #272727;
-  font-size: 10pt;
+  color: #292929;
+  font-size: 9pt;
 }
 
-.bgIndex {
-  background-image: url(../assets/homePageImg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
+section hr {
+  width: 30px;
+  margin: 0.5rem 0;
 }
 
-.bgModelos {
-  background-image: url(../assets/modelosImg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-}
-
-.bgAccesorios {
-  background-image: url(../assets/accesoriosImg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-}
-
-@media screen and (max-width: 765px) {
-  .bgAccesorios {
-    background-position: 40%;
-  }
-}
-
-.bgNosotros {
-  background-image: url(../assets/nosotrosImg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-}
-
-.bgSection-1 {
-  background-color: #727272;
-}
-
-.bgSection-2 {
-  background-color: #363636;
-}
-
-.bgFooter {
-  background-color: rgb(245, 245, 245);
-}
-
-.paddingH1 {
-  padding-top: 80px;
-}
-
-.padding-25 {
-  padding: 0 50%;
-}
-
-.hNav {
-  height: 100%;
-}
-
-.boton {
-  border-radius: 10px;
-  padding: 5px 40px;
-  border: 2px solid;
-}
-
-.botonBlanco {
-  color: white;
-  border-color: white;
-
-  &:hover {
-    color: #272727;
-    background-color: white;
-    border-color: white;
-  }
-}
-
-.botonNegro {
-  color: #272727;
-  border-color: #272727;
-
-  &:hover {
-    color: white;
-    background-color: #272727;
-    border-color: #272727;
-  }
-}
-
-.form-control {
-  border: none;
-  border-bottom: 2px solid #272727;
-  background-color: transparent;
-  border-radius: 0;
-
-  &:focus {
-    color: #272727;
-    background-color: transparent;
-    border-color: #727272;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem transparent;
-  }
-}
-
-.imgRedonda {
+.imgModelos {
   width: 70%;
 }
 
-.objectFitCover {
-  object-fit: cover;
-}
-
 .vertical {
-  border-left: 1px solid #363636;
+  border-left: 1px solid #444444;
   height: 100%;
 }
 
@@ -169,16 +191,35 @@ footer .footer-link, a {
     border: none;
   }
 }
-
-section hr {
-  width: 30px;
-  margin: 0.5rem 0;
-}
-
 .precio {
   font-weight: 700;
   font-size: 9pt;
   line-height: 0;
+}
+
+.imgEquipo img {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.imgEquipo img:hover {
+  filter: grayscale(50%);
+  opacity: 0.85;
+  transition: all 0.4s ease-in-out;
+  border-radius: 50%;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #292929;
+  background-color: transparent;
+  border-radius: 0;
+}
+.form-control:focus {
+  color: #292929;
+  background-color: transparent;
+  border-color: #727272;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem transparent;
 }
 
 iframe {
@@ -191,19 +232,17 @@ iframe {
     height: 250px;
   }
 }
-
 .mapa {
   filter: grayscale(85%);
   opacity: 0.85;
   transition: all 0.4s ease-in-out;
   width: 100%;
-  background-color: rgb(245, 245, 245);
-  
-  &:hover {
-    filter: grayscale(0%);
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-  }
+  line-height: 0;
+}
+.mapa:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

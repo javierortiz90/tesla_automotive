@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla | Modelos</title>
+    <meta name="description" content="Conoce todos nuestros modelos, novedades y actualizaciones.">
+    <meta name="keywords" content="model s, model e, model x, model y, autos, modelos">
+    <title>Modelos | Tesla</title>
     <!--ESTILOS BOOTSTRAP-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--ESTILOS PROPIOS-->
     <link rel="stylesheet" href="../css/style.css">
+    <!--ANIMACION AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="../assets/favicon.ico">
     <script src="https://kit.fontawesome.com/197b21a5aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--HEADER-->
-<header>
+<header class="header position-sticky top-0">
     <nav class="navbar navbar-expand-lg navbar-light p-4 py-md-4 flex-md-column shadow-lg">
-        <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logoTesla" width="120px"></a>
+        <a class="navbar-brand" href="../index.html"><img src="../assets/logo.webp" alt="logoTesla" width="120px"></a>
           <!--NO TOCAR ESTE BOTON PORQUE ES EL MENU BURGER-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,26 +46,26 @@
 
 <!--MAIN-->
 <main>
-    <div class="bgModelos text-center px-5 padding-25">
+    <div class="background background--bgModelos text-center px-5">
         <h1 class="paddingH1">Modelos</h1>
         <p>Descubra qué modelo se ajusta a sus necesidades, hábitos de conducción y estilo de vida.</p>
     </div>
     <div class="container">
-        <div class="row py-5 text-center">
+        <div class="row py-5 text-center" data-aos="fade-down">
             <div class="col-3">
-                <img class="imgRedonda " src="../assets/models.jpg" alt="models">
+                <img class="imgModelos" src="../assets/models.webp" alt="models">
                 <h5>Model S</h5>
             </div>
             <div class="col-3">
-                <img class="imgRedonda " src="../assets/model3.jpg" alt="model3">
+                <img class="imgModelos" src="../assets/model3.webp" alt="model3">
                 <h5>Model 3</h5>                
             </div>
             <div class="col-3">
-                <img class="imgRedonda " src="../assets/modelx.jpg" alt="modelx">
+                <img class="imgModelos" src="../assets/modelx.webp" alt="modelx">
                 <h5>Model X</h5>
             </div>
             <div class="col-3">
-                <img class="imgRedonda " src="../assets/modely.jpg" alt="modely">
+                <img class="imgModelos" src="../assets/modely.webp" alt="modely">
                 <h5>Model Y</h5>
             </div>
         </div>
@@ -72,7 +76,7 @@
                 <p>Cada nuevo Model S incluye las últimas funciones de seguridad activa de Tesla, como el frenado automático de emergencia, sin costo adicional.</p>
             </div>
             <div class="col-12 col-md-6 order-0 order-md-1">
-                <img class="h-100 w-100 objectFitCover" src="../assets/proteccion.jpg" alt="proteccion">
+                <img class="h-100 w-100 objectFitCover" src="../assets/proteccion.webp" alt="proteccion">
             </div>
             <div class="col-12 col-md-6 px-md-5 order-3 order-md-3">
                 <h5 class="my-3">El futuro de la conducción</h5>
@@ -80,7 +84,7 @@
                 <p>Con las actualizaciones de software inalámbricas, las últimas mejoras están disponibles al instante.</p>
             </div>
             <div class="col-12 col-md-6 order-2 order-md-2">
-                <img class="h-100 w-100 objectFitCover" src="../assets/autopilot.jpg" alt="autopilot">
+                <img class="h-100 w-100 objectFitCover" src="../assets/autopilot.webp" alt="autopilot">
             </div>
         </div>
     </div>
@@ -104,7 +108,7 @@
         <hr>
         <div class="row  py-3">
             <div class="col-md-3 px-4 py-2 p-md-3">
-                <img class="mb-3" src="../assets/logo.png" alt="logoTesla" width="150px">
+                <img class="mb-3" src="../assets/logo.webp" alt="logoTesla" width="150px">
                 <p class="me-md-5">Estamos construyendo un mundo impulsado por energía solar, que funciona con baterías y se transporta mediante vehículos eléctricos.</p>
             </div>
             <div class="col-md-3 px-4 py-2 p-md-3">
@@ -125,7 +129,7 @@
             </div>
             <div class="col-md-3 px-4 py-2 p-md-3">
                 <h5 class="mb-3">Redes Sociales</h5>
-                <ul class="d-flex list-unstyled justify-content-md-start gap-3">
+                <ul class="d-flex list-unstyled justify-content-md-start gap-3 redesSociales">
                     <li><a href="https://www.instagram.com/teslamotors/"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://es-la.facebook.com/TeslaMotorsCorp/"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com/Tesla"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -137,5 +141,12 @@
 </footer>
 
 <script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out',
+        duration: 500
+    });
+</script>
 </body>
 </html>

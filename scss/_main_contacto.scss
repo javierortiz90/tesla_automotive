@@ -1,0 +1,39 @@
+.form-control {
+    border: none;
+    border-bottom: 2px solid $color-primario;
+    background-color: transparent;
+    border-radius: 0;
+  
+    &:focus {
+      color: $color-primario;
+      background-color: transparent;
+      border-color: $color-terciario;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem transparent;
+    }
+} 
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+  
+@media screen and (max-width: 765px) {
+    iframe {
+      height: 250px;
+    }
+}
+  
+.mapa {
+    filter: grayscale(85%);
+    opacity: 0.85;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    line-height: 0;
+    
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+}

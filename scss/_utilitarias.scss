@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $color-terciario;
+  }
+}
+
+.textoBlanco {
+  color: $color-blanco;
+}
+
+p, input {
+  font-size: map-get($tamano-fuente, 10);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: map-get($grosor-fuente, bold);
+}
+
+.paddingH1 {
+    padding-top: 80px;
+}
+
+.botonBlanco {
+  @include boton ($color-blanco, $color-blanco);
+
+  &:hover {
+    @include botonHover ($color-primario, $color-blanco, $color-blanco);
+  }
+  &:active {
+    @include botonActive;
+  }
+}
+
+.botonNegro {
+  @include boton ($color-primario, $color-primario);
+
+  &:hover {
+    @include botonHover ($color-blanco, $color-primario, $color-primario);
+  }
+  &:active {
+    @include botonActive;
+  }
+}
+
+.objectFitCover {
+    object-fit: cover;
+}
+
+.redesSociales a {
+  font-size: map-get($tamano-fuente, 12);
+}
+
+.fa-instagram:hover {
+  color:orange !important;
+}
+
+.fa-facebook:hover {
+  color:blue !important;
+}
+
+.fa-twitter:hover {
+  color:$color-terciario !important;
+}
+
+
+.fa-youtube:hover {
+  color:red !important;
+}
+
+.card-img-top{
+  filter: grayscale(0%);
+  transition: all 0.3s ease-in-out;
+
+
+  &:hover{
+    filter: grayscale(65%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .card-img-top{
+    filter: grayscale(0%);
+  }
+}
