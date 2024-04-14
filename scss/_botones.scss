@@ -1,0 +1,21 @@
+.botonBlanco {
+    @include boton ($color-blanco, $color-blanco);
+  
+    &:hover {
+      @include botonHover ($color-primario, $color-blanco, $color-blanco);
+    }
+    &:active {
+      @include botonActive;
+    }
+  }
+  
+  .botonNegro {
+    @include boton ($color-primario, $color-primario);
+  
+    &:hover {
+      @include botonHover ($color-blanco, $color-primario, $color-primario);
+    }
+    &:active {
+      @include botonActive;
+    }
+  }

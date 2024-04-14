@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $color-terciario;
+  }
+}
+
+.textoBlanco {
+  color: $color-blanco;
+}
+
+p, input {
+  font-size: map-get($tamano-fuente, 10);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: map-get($grosor-fuente, bold);
+}
+
+.paddingH1 {
+    padding-top: 80px;
+}

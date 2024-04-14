@@ -1,0 +1,19 @@
+.redesSociales a {
+  font-size: map-get($tamano-fuente, 12);
+}
+
+.fa-instagram:hover {
+  color:orange !important;
+}
+
+.fa-facebook:hover {
+  color:blue !important;
+}
+
+.fa-twitter:hover {
+  color:$color-terciario !important;
+}
+
+.fa-youtube:hover {
+  color:red !important;
+}

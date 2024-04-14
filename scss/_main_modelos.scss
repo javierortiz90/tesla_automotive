@@ -1,3 +1,14 @@
 .imgModelos {
     width: 70%;
 }
+
+@media screen and (max-width: 765px) {
+    .imgModelos{
+      width: 110%;
+    }
+  }
+
+h5 {
+    font-size: 1rem;
+
+}

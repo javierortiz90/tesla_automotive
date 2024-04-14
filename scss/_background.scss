@@ -22,6 +22,11 @@
       @extend .background;
       background-image: url(../assets/nosotrosImg.webp);
     }
+    &--bg404 {
+      @extend .background;
+      height: 100vh;
+      background-image: url(../assets/404.webp);
+    }
 }
   
 @media screen and (max-width: 765px) {

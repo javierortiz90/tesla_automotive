@@ -10,6 +10,24 @@ body {
   color: #292929;
 }
 
+.objectFitCover {
+  object-fit: cover;
+}
+
+.card-img-top {
+  filter: grayscale(0%);
+  transition: all 0.3s ease-in-out;
+}
+.card-img-top:hover {
+  filter: grayscale(65%);
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 765px) {
+  .card-img-top {
+    filter: grayscale(0%);
+  }
+}
 a {
   text-decoration: none;
 }
@@ -79,10 +97,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
 }
 
-.objectFitCover {
-  object-fit: cover;
-}
-
 .redesSociales a {
   font-size: 12pt;
 }
@@ -103,20 +117,6 @@ h1, h2, h3, h4, h5, h6 {
   color: red !important;
 }
 
-.card-img-top {
-  filter: grayscale(0%);
-  transition: all 0.3s ease-in-out;
-}
-.card-img-top:hover {
-  filter: grayscale(65%);
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 765px) {
-  .card-img-top {
-    filter: grayscale(0%);
-  }
-}
 .header {
   z-index: 999;
   background-color: white;
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.background, .background--bgNosotros, .background--bgModelos, .background--bgAccesorios, .background--bgIndex {
+.background, .background--bg404, .background--bgNosotros, .background--bgModelos, .background--bgAccesorios, .background--bgIndex {
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -143,6 +143,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .background--bgNosotros {
   background-image: url(../assets/nosotrosImg.webp);
+}
+.background--bg404 {
+  height: 100vh;
+  background-image: url(../assets/404.webp);
 }
 
 @media screen and (max-width: 765px) {
@@ -179,6 +183,15 @@ section hr {
 
 .imgModelos {
   width: 70%;
+}
+
+@media screen and (max-width: 765px) {
+  .imgModelos {
+    width: 110%;
+  }
+}
+h5 {
+  font-size: 1rem;
 }
 
 .vertical {
@@ -243,6 +256,11 @@ iframe {
   filter: grayscale(0%);
   opacity: 1;
   transition: all 0.4s ease-in-out;
+}
+
+.h1-404 {
+  font-size: 100pt;
+  color: rgb(150, 44, 44);
 }
 
 /*# sourceMappingURL=style.css.map */
